@@ -23,7 +23,7 @@
                     <driver>org.postgresql.Driver</driver>
                     <url>jdbc:postgresql://localhost:5432/postgres</url>
                     <username>postgres</username>
-                    <password>slavo0202</password>
+                    <password>secret-password</password>
                     <verbose>true</verbose>
                     <rollbackCount>1</rollbackCount>
                 </configuration>
