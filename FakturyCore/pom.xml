@@ -11,5 +11,44 @@
 
     <artifactId>FakturyCore</artifactId>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.liquibase</groupId>
+                <artifactId>liquibase-plugin</artifactId>
+                <version>1.6.1.0</version>
+
+                <configuration>
+                    <changeLogFile>src/main/resources/database-changelog.xml</changeLogFile>
+                    <driver>org.postgresql.Driver</driver>
+                    <url>jdbc:postgresql://localhost:5432/postgres</url>
+                    <username>postgres</username>
+                    <password>slavo0202</password>
+                    <verbose>true</verbose>
+                    <rollbackCount>1</rollbackCount>
+                </configuration>
+
+                <executions>
+                    <execution>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>update</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>9.0-801.jdbc4</version>
+        </dependency>
+    </dependencies>
+
+
 
 </project>

@@ -15,5 +15,27 @@
         <module>FakturyCommons</module>
     </modules>
 
+    <properties>
+        <spring-version>3.0.5.RELEASE</spring-version>
+        <liquibase-version>2.0.1</liquibase-version>
+    </properties>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>${spring-version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.liquibase</groupId>
+            <artifactId>liquibase-core</artifactId>
+            <version>${liquibase-version}</version>
+        </dependency>
+
+
+    </dependencies>
+
 
 </project>
