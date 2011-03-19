@@ -16,16 +16,19 @@
             <plugin>
                 <groupId>org.liquibase</groupId>
                 <artifactId>liquibase-plugin</artifactId>
-                <version>1.6.1.0</version>
+                <version>1.9.5.0</version>
 
                 <configuration>
                     <changeLogFile>src/main/resources/database-changelog.xml</changeLogFile>
                     <driver>org.postgresql.Driver</driver>
                     <url>jdbc:postgresql://localhost:5432/postgres</url>
                     <username>postgres</username>
-                    <password>slavo0202</password>
+                    <!-- tutaj ustawić własne hasło! -->
+                    <password>root</password>
                     <verbose>true</verbose>
+                    <clearCheckSums>true</clearCheckSums>
                     <rollbackCount>1</rollbackCount>
+
                 </configuration>
 
                 <executions>
