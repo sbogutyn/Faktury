@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog/1.8"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.8
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.8.xsd">
+
+    <changeSet id="1" author="slawek">
+        <preConditions>
+            <not>
+                <tableExists tableName="firma"/>
+            </not>
+        </preConditions>
+        <sql>
+            CREATE TABLE firma (
+            id SERIAL PRIMARY KEY,
+            skrot VARCHAR(20) NOT NULL,
+            nazwa VARCHAR(50) NOT NULL,
+            ulica VARCHAR(20) NOT NULL,
+            kod VARCHAR(6) NOT NULL,
+            miasto VARCHAR(20) NOT NULL,
+            nip VARCHAR(10) NOT NULL,
+            konto VARCHAR(26),
+            osoba VARCHAR(20),
+            telefon VARCHAR(20),
+            email VARCHAR(20)
+            );
+
+            CREATE TABLE stawka_vat (
+            id SERIAL PRIMARY KEY,
+            stawka_vat  VARCHAR(10) NOT NULL,
+            wartosc_vat INTEGER
+            );
+
+            CREATE TABLE jednostka (
+            id SERIAL PRIMARY KEY,
+            jednostka_m  VARCHAR(10) NOT NULL
+            );
+
+            CREATE TABLE forma_platnosci (
+            id SERIAL PRIMARY KEY,
+            opis  VARCHAR(10) NOT NULL,
+            ilosc_dni INTEGER
+            );
+
+            CREATE TABLE rabat (
+            id SERIAL PRIMARY KEY,
+            wartosczakupow  INTEGER NOT NULL,
+            wusokoscrabatu INTEGER NOT NULL
+            );
+
+            CREATE TABLE towar (
+            id SERIAL PRIMARY KEY,
+            skrot VARCHAR(20) NOT NULL,
+            nazwa VARCHAR(50) NOT NULL,
+            pkwiu VARCHAR(20),
+            jednm INTEGER REFERENCES jednostka(id),
+            cena_netto NUMERIC NOT NULL CHECK (cena_netto>0),
+            vat INTEGER REFERENCES stawka_vat(id),
+            cena_brutto NUMERIC NOT NULL
+            );
+
+            CREATE TABLE faktura (
+            id SERIAL PRIMARY KEY,
+            nr VARCHAR(10) NOT NULL,
+            data_wystawienie DATE NOT NULL,
+            data_sprzedazy DATE NOT NULL,
+            firma INTEGER REFERENCES firma(id),
+            kontrahent INTEGER REFERENCES firma(id),
+            forma_platnosci INTEGER REFERENCES forma_platnosci(id),
+            termin_platnosci DATE NOT NULL,
+            rabat INTEGER REFERENCES rabat(id)
+            );
+
+
+            CREATE TABLE pozycja (
+            id SERIAL PRIMARY KEY,
+            nazwa VARCHAR(50) NOT NULL,
+            pkwiu VARCHAR(20),
+            jednm VARCHAR(10),
+            cena_netto NUMERIC NOT NULL CHECK (cena_netto>0),
+            vat INTEGER,
+            cena_brutto NUMERIC NOT NULL,
+            ilosc NUMERIC NOT NULL CHECK (ilosc>0),
+            wartosc_netto NUMERIC,
+            wartosc_brutto NUMERIC,
+            faktura INTEGER REFERENCES faktura(id)
+            );
+
+            CREATE TABLE wplata (
+            id SERIAL PRIMARY KEY,
+            datawplaty DATE,
+            kwota NUMERIC,
+            faktura INTEGER REFERENCES faktura(id)
+            );
+
+        </sql>
+
+        <rollback>
+            <sql>
+                DROP TABLE firma CASCADE;
+                DROP TABLE stawka_vat CASCADE;
+                DROP TABLE jednostka CASCADE;
+                DROP TABLE forma_platnosci CASCADE;
+                DROP TABLE rabat CASCADE;
+                DROP TABLE towar CASCADE;
+                DROP TABLE faktura CASCADE;
+                DROP TABLE pozycja CASCADE;
+                DROP TABLE wplata CASCADE;
+            </sql>
+        </rollback>
+
+
+    </changeSet>
+
+    <!-- tutaj dodawać kolejne change sety w postaci
+        <changeSet id="kolejny_nr_id" author="autor_zmian">
+            <sql>
+                INSERT INTO firma(skrot, nazwa, ulica, kod, miasto, nip, konto, osoba, telefon, email)
+                VALUES ('f', 'jakas_firma', 'jakas_ulica', '84-200', 'jakies_miasto', 'jakis_nip', 'nr_konta', 'osoba1', '34534321', 'e@mai.l');
+            </sql>
+        </changeSet>
+
+    -->
+
+
+
+</databaseChangeLog>
+
