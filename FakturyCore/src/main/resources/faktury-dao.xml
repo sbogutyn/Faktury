@@ -23,6 +23,66 @@
         <property name="db" ref="simpleJdbc"/>
     </bean>
 
+    <bean id="jednostkaManager" class="faktury.core.managers.JednostkaManager">
+        <property name="getJednostkaSqlQuery">
+            <value>
+                SELECT * FROM jednostka WHERE id = ?
+            </value>
+        </property>
+        <property name="insertJednostkaSqlQuery">
+            <value>
+                INSERT INTO jednostka(jednostka_m)
+                VALUES (?)
+            </value>
+        </property>
+        <property name="db" ref="simpleJdbc"/>
+    </bean>
+
+    <bean id="rabatManager" class="faktury.core.managers.RabatManager">
+        <property name="getRabatSqlQuery">
+            <value>
+                SELECT * FROM rabat WHERE id = ?
+            </value>
+        </property>
+        <property name="insertRabatSqlQuery">
+            <value>
+                INSERT INTO rabat(wartosc_zakupow, wysokosc_rabatu)
+                VALUES (?, ?)
+            </value>
+        </property>
+        <property name="db" ref="simpleJdbc"/>
+    </bean>
+
+     <bean id="forma_platnosciManager" class="faktury.core.managers.Forma_platnosciManager">
+        <property name="getForma_platnosciSqlQuery">
+            <value>
+                SELECT * FROM forma_platnosci WHERE id = ?
+            </value>
+        </property>
+        <property name="insertForma_platnosciSqlQuery">
+            <value>
+                INSERT INTO forma_platnosci(opis, ilosc_dni)
+                VALUES (?, ?)
+            </value>
+        </property>
+        <property name="db" ref="simpleJdbc"/>
+    </bean>
+
+    <bean id="towarManager" class="faktury.core.managers.TowarManager">
+        <property name="getTowarSqlQuery">
+            <value>
+                SELECT * FROM towar WHERE id = ?
+            </value>
+        </property>
+        <property name="insertTowarSqlQuery">
+            <value>
+                INSERT INTO towar(skrot, nazwa, pkwiu, jednm, cena_netto, vat, cena_brutto)
+                VALUES (?, ?, ?, ?, ?, ?, ?)
+            </value>
+        </property>
+        <property name="db" ref="simpleJdbc"/>
+    </bean>
+
     <!-- tu dodajemy kolejne managery w postaci:
         <bean id="nazwaManagera" class="pelna.sciezka.do.klasy.Managera">
             <property name="getCostamQuery">

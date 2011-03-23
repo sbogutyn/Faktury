@@ -10,6 +10,12 @@
 
     <bean id="dao" class="faktury.core.dao.FakturyDaoImpl">
         <property name="firmaManager" ref="firmaManager"/>
+        <property name="jednostkaManager" ref="jednostkaManager"/>
+        <property name="rabatManager" ref="rabatManager"/>
+        <property name="forma_platnosciManager" ref="forma_platnosciManager"/>
+        <property name="towarManager" ref="towarManager"/>
+
+
         <!-- kolejne managery dodawać tutaj
             w postaci <property name="nazwaManageraWFakturyDaoImpl" ref="nazwaManageraWfaktury-dao.xml">
         -->
