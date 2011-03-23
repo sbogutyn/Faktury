@@ -50,25 +50,28 @@ public class Main {
 
     private void saveStawka_vatTest() {
         Stawka_vat stawka_vat = new Stawka_vat();
-        stawka_vat.setStawka_vat(15.07);
-        stawka_vat.setWartosc_vat(32.05);
+        stawka_vat.setStawka_vat("15%");
+        stawka_vat.setWartosc_vat("22%");
         fakturyDao.saveStawka_vat(stawka_vat);
     }
     private void getStawka_vatTest(long id) {
         Stawka_vat stawka_vat = fakturyDao.getStawka_vat(id);
-        System.out.println("Firma: " + stawka_vat);
+        System.out.println("Stawka vat: " + stawka_vat);
     }
 
 
     private void saveFakturaTest() {
         Faktura faktura = new Faktura();
         faktura.setNr("35abc");
-        //faktura.setData_wystawienie("2001334");
-        //faktura.setData_sprzedazy(....);
+        java.sql.Date date1 = java.sql.Date.valueOf( "2011-01-01" );
+        faktura.setData_wystawienie(date1);
+        java.sql.Date date2 = java.sql.Date.valueOf( "2011-01-01" );
+        faktura.setData_sprzedazy(date2);
         faktura.setFirma(35);
         faktura.setKontrahent(21);
         faktura.setForma_platnosci(2);
-        //faktura.setTermin_platnosci(....);
+        java.sql.Date date3 = java.sql.Date.valueOf( "2011-01-01" );
+        faktura.setTermin_platnosci(date3);
         faktura.setRabat(4);
         fakturyDao.saveFaktura(faktura);
     }
@@ -101,7 +104,8 @@ public class Main {
 
     private void saveWplataTest() {
         Wplata wplata = new Wplata();
-        //wplata.setDatawplaty(   );
+        java.sql.Date date4 = java.sql.Date.valueOf( "2011-01-01" );
+        wplata.setDatawplaty(date4);
         wplata.setKwota(231);
         wplata.setFaktura(32);
         fakturyDao.saveWplata(wplata);

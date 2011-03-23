@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf5ae18f-c5ab-42b7-b6db-706c022c7321" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FakturyCore/target/classes/faktury/core/Main.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Faktury.iws" afterPath="$PROJECT_DIR$/Faktury.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FakturyCore/src/main/java/faktury/core/Main.java" afterPath="$PROJECT_DIR$/FakturyCore/src/main/java/faktury/core/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FakturyCore/src/main/java/faktury/core/beans/Pozycja.java" afterPath="$PROJECT_DIR$/FakturyCore/src/main/java/faktury/core/beans/Pozycja.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FakturyCore/src/main/java/faktury/core/beans/Stawka_vat.java" afterPath="$PROJECT_DIR$/FakturyCore/src/main/java/faktury/core/beans/Stawka_vat.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FakturyCore/src/main/java/faktury/core/managers/PozycjaManager.java" afterPath="$PROJECT_DIR$/FakturyCore/src/main/java/faktury/core/managers/PozycjaManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FakturyCore/src/main/java/faktury/core/managers/Stawka_vatManager.java" afterPath="$PROJECT_DIR$/FakturyCore/src/main/java/faktury/core/managers/Stawka_vatManager.java" />
     </list>
     <ignored path="Faktury.iws" />
@@ -75,16 +72,52 @@
       <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FakturyCore/src/main/java/faktury/core/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="54" selection-start="1640" selection-end="1640" vertical-scroll-proportion="0.0">
+            <state line="63" column="60" selection-start="1723" selection-end="1723" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="faktury-dao.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/FakturyCore/src/main/resources/faktury-dao.xml">
+      <file leaf-file-name="FakturyDaoImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FakturyCore/src/main/java/faktury/core/dao/FakturyDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="29" selection-start="188" selection-end="188" vertical-scroll-proportion="0.125">
+            <state line="11" column="13" selection-start="187" selection-end="187" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Stawka_vat.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FakturyCore/src/main/java/faktury/core/beans/Stawka_vat.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="21" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Stawka_vatManager.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FakturyCore/src/main/java/faktury/core/managers/Stawka_vatManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="45" column="47" selection-start="1611" selection-end="1611" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="db-access.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/FakturyCore/src/main/resources/db-access.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="44" selection-start="1349" selection-end="1349" vertical-scroll-proportion="0.40159574">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database-changelog.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FakturyCore/src/main/resources/database-changelog.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="45" selection-start="953" selection-end="953" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -110,14 +143,14 @@
         <option value="$PROJECT_DIR$/FakturyCore/src/main/java/faktury/core/managers/WplataManager.java" />
         <option value="$PROJECT_DIR$/FakturyCore/src/main/java/faktury/core/dao/IFakturyDao.java" />
         <option value="$PROJECT_DIR$/FakturyCore/src/main/java/faktury/core/dao/FakturyDaoImpl.java" />
-        <option value="$PROJECT_DIR$/FakturyCore/src/main/resources/db-access.xml" />
         <option value="$PROJECT_DIR$/FakturyCore/src/main/java/faktury/core/managers/PozycjaManager.java" />
         <option value="$PROJECT_DIR$/FakturyCore/src/main/java/faktury/core/beans/Pozycja.java" />
         <option value="$PROJECT_DIR$/FakturyCore/src/main/resources/database-changelog.xml" />
+        <option value="$PROJECT_DIR$/FakturyCore/src/main/resources/faktury-dao.xml" />
         <option value="$PROJECT_DIR$/FakturyCore/src/main/java/faktury/core/beans/Stawka_vat.java" />
         <option value="$PROJECT_DIR$/FakturyCore/src/main/java/faktury/core/managers/Stawka_vatManager.java" />
+        <option value="$PROJECT_DIR$/FakturyCore/src/main/resources/db-access.xml" />
         <option value="$PROJECT_DIR$/FakturyCore/src/main/java/faktury/core/Main.java" />
-        <option value="$PROJECT_DIR$/FakturyCore/src/main/resources/faktury-dao.xml" />
       </list>
     </option>
   </component>
@@ -127,6 +160,34 @@
         <PATH_ELEMENT>
           <option name="myItemId" value="" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="FakturyCore" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="FakturyCore" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Plugins" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginsNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="liquibase" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginNode" />
         </PATH_ELEMENT>
       </PATH>
     </treeState>
@@ -169,16 +230,6 @@
       </pane>
       <pane id="Scope">
         <subPane subId="Project Files" />
-      </pane>
-      <pane id="Favorites">
-        <subPane subId="Faktury">
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.intellij.ide.favoritesTreeView.FavoritesTreeNodeDescriptor" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
       </pane>
       <pane id="ProjectPane">
         <subPane>
@@ -336,6 +387,50 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Faktury" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Faktury" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FakturyCore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="beans" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Favorites">
+        <subPane subId="Faktury">
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.intellij.ide.favoritesTreeView.FavoritesTreeNodeDescriptor" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -353,9 +448,9 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration default="false" name="FakturyCore [org.liquibase:liquibase-plugin:1.9.5.0:update]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
@@ -660,11 +755,11 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32982457" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32807016" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20304182" sideWeight="0.7035088" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20608366" sideWeight="0.7649123" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39939255" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25323194" sideWeight="0.7035088" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25323194" sideWeight="0.7649123" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29649124" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23508772" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -734,19 +829,9 @@
         <state line="58" column="45" selection-start="1088" selection-end="1088" vertical-scroll-proportion="0.63054186" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FakturyCore/src/main/java/faktury/core/beans/Firma.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="122" column="45" selection-start="2354" selection-end="2354" vertical-scroll-proportion="1.4235294" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FakturyCore/src/main/java/faktury/core/beans/Faktura.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="17" selection-start="871" selection-end="871" vertical-scroll-proportion="-1.955665" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FakturyCore/src/main/resources/db-access.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="67" selection-start="889" selection-end="889" vertical-scroll-proportion="0.04178273" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FakturyCore/src/main/java/faktury/core/managers/FirmaManger.java">
@@ -754,51 +839,63 @@
         <state line="51" column="75" selection-start="1809" selection-end="1809" vertical-scroll-proportion="0.08671587" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FakturyCore/src/main/resources/database-changelog.xml">
+    <entry file="file://$PROJECT_DIR$/FakturyCore/src/main/java/faktury/core/dao/IFakturyDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="19" selection-start="1062" selection-end="1062" vertical-scroll-proportion="0.5227882">
+        <state line="22" column="0" selection-start="605" selection-end="605" vertical-scroll-proportion="0.7587131" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FakturyCore/src/main/resources/faktury-dao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="29" selection-start="188" selection-end="188" vertical-scroll-proportion="-0.43882978">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FakturyCore/src/main/java/faktury/core/managers/Stawka_vatManager.java">
+    <entry file="file://$PROJECT_DIR$/FakturyCore/src/main/java/faktury/core/beans/Firma.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="37" selection-start="989" selection-end="989" vertical-scroll-proportion="0.19571045">
+        <state line="122" column="45" selection-start="2354" selection-end="2354" vertical-scroll-proportion="0.92287916">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FakturyCore/src/main/resources/database-changelog.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="45" selection-start="953" selection-end="953" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FakturyCore/src/main/java/faktury/core/beans/Stawka_vat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="25" selection-start="487" selection-end="487" vertical-scroll-proportion="0.6380697">
+        <state line="18" column="21" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FakturyCore/src/main/java/faktury/core/dao/FakturyDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/FakturyCore/src/main/java/faktury/core/managers/Stawka_vatManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="0" selection-start="2053" selection-end="2053" vertical-scroll-proportion="1.6863271">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FakturyCore/src/main/java/faktury/core/dao/IFakturyDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="605" selection-end="605" vertical-scroll-proportion="0.7587131">
+        <state line="45" column="47" selection-start="1611" selection-end="1611" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FakturyCore/src/main/java/faktury/core/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="54" selection-start="1640" selection-end="1640" vertical-scroll-proportion="0.0">
+        <state line="63" column="60" selection-start="1723" selection-end="1723" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FakturyCore/src/main/resources/faktury-dao.xml">
+    <entry file="file://$PROJECT_DIR$/FakturyCore/src/main/java/faktury/core/dao/FakturyDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="29" selection-start="188" selection-end="188" vertical-scroll-proportion="0.125">
+        <state line="11" column="13" selection-start="187" selection-end="187" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FakturyCore/src/main/resources/db-access.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="44" selection-start="1349" selection-end="1349" vertical-scroll-proportion="0.40159574">
           <folding />
         </state>
       </provider>

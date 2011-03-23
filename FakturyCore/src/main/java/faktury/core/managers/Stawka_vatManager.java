@@ -38,8 +38,8 @@ public class Stawka_vatManager {
             public Stawka_vat mapRow(ResultSet resultSet, int rowNum) throws SQLException {
                 Stawka_vat stawka_vat = new Stawka_vat();
                 stawka_vat.setId(resultSet.getLong("id"));
-                stawka_vat.setStawka_vat(resultSet.getDouble("stawkavat"));
-                stawka_vat.setWartosc_vat(resultSet.getDouble("wartosc_vat"));
+                stawka_vat.setStawka_vat(resultSet.getString("stawka_vat"));
+                stawka_vat.setWartosc_vat(resultSet.getString("wartosc_vat"));
                 return stawka_vat;
             }
         };
