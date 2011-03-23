@@ -9,12 +9,17 @@ package faktury.core.beans;
  */
 public class Stawka_vat {
 
-     @Override
+
+
+
+    private long id;
+
+    @Override
     public String toString() {
         return "Stawka_vat{" +
                 "id=" + id +
-                ", stawka_vat='" + stawka_vat + '\'' +
-                ", wartosc_vat='" + wartosc_vat + '\'' +
+                ", stawka_vat=" + stawka_vat +
+                ", wartosc_vat=" + wartosc_vat +
                 '}';
     }
 
@@ -26,23 +31,22 @@ public class Stawka_vat {
         this.id = id;
     }
 
-    public Double getStawka_vat() {
+    public double getStawka_vat() {
         return stawka_vat;
     }
 
-    public void setStawka_vat(Double stawka_vat) {
+    public void setStawka_vat(double stawka_vat) {
         this.stawka_vat = stawka_vat;
     }
 
-    public Double getWartosc_vat() {
+    public double getWartosc_vat() {
         return wartosc_vat;
     }
 
-    public void setWartosc_vat(Double wartosc_vat) {
+    public void setWartosc_vat(double wartosc_vat) {
         this.wartosc_vat = wartosc_vat;
     }
 
-    private long id;
-    private Double stawka_vat;
-    private Double wartosc_vat;
+    private double stawka_vat;
+    private double wartosc_vat;
 }

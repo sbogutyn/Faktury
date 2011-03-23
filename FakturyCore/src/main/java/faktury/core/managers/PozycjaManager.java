@@ -48,7 +48,7 @@ public class PozycjaManager {
                 pozycja.setCena_netto(resultSet.getDouble("cena_netto"));
                 pozycja.setVat(resultSet.getLong("vat"));
                 pozycja.setCena_brutto(resultSet.getDouble("cena_brutto"));
-                pozycja.setIlosc(resultSet.getLong("ilosc"));
+                pozycja.setIlosc(resultSet.getDouble("ilosc"));
                 pozycja.setWartosc_netto(resultSet.getDouble("wartosc_netto"));
                 pozycja.setWartosc_brutto(resultSet.getDouble("wartosc_brutto"));
                 pozycja.setFaktura(resultSet.getLong("faktura"));

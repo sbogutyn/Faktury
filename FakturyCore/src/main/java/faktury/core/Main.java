@@ -63,12 +63,12 @@ public class Main {
     private void saveFakturaTest() {
         Faktura faktura = new Faktura();
         faktura.setNr("35abc");
-        faktura.setData_wystawienie("2001334");
-        faktura.setData_sprzedazy(....);
+        //faktura.setData_wystawienie("2001334");
+        //faktura.setData_sprzedazy(....);
         faktura.setFirma(35);
         faktura.setKontrahent(21);
         faktura.setForma_platnosci(2);
-        faktura.setTermin_platnosci(....);
+        //faktura.setTermin_platnosci(....);
         faktura.setRabat(4);
         fakturyDao.saveFaktura(faktura);
     }
@@ -101,7 +101,7 @@ public class Main {
 
     private void saveWplataTest() {
         Wplata wplata = new Wplata();
-        wplata.setDatawplaty(........);
+        //wplata.setDatawplaty(   );
         wplata.setKwota(231);
         wplata.setFaktura(32);
         fakturyDao.saveWplata(wplata);

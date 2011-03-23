@@ -23,6 +23,66 @@
         <property name="db" ref="simpleJdbc"/>
     </bean>
 
+    <bean id="stawka_vatManager" class="faktury.core.managers.Stawka_vatManager">
+        <property name="getFakturaSqlQuery">
+            <value>
+                SELECT * FROM stawka_vat WHERE id = ?
+            </value>
+        </property>
+        <property name="insertFakturaSqlQuery">
+            <value>
+                INSERT INTO stawka_vat(stawka_vat, wartosc_vat)
+                VALUES (?, ?)
+            </value>
+        </property>
+        <property name="db" ref="simpleJdbc"/>
+    </bean>
+
+    <bean id="fakturaManager" class="faktury.core.managers.FakturaManager">
+        <property name="getFakturaSqlQuery">
+            <value>
+                SELECT * FROM faktura WHERE id = ?
+            </value>
+        </property>
+        <property name="insertFakturaSqlQuery">
+            <value>
+                INSERT INTO faktura(nr, data_wystawienie, data_sprzedazy, firma, kontrahent, forma_platnosci, termin_platnosci, rabat)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+            </value>
+        </property>
+        <property name="db" ref="simpleJdbc"/>
+    </bean>
+
+    <bean id="pozycjaManager" class="faktury.core.managers.PozycjaManager">
+        <property name="getFakturaSqlQuery">
+            <value>
+                SELECT * FROM pozycja WHERE id = ?
+            </value>
+        </property>
+        <property name="insertFakturaSqlQuery">
+            <value>
+                INSERT INTO pozycja (nazwa, pkwiu, jednm, cena_netto, vat, cena_brutto, ilosc, wartosc_netto, wartosc_brutto, faktura)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            </value>
+        </property>
+        <property name="db" ref="simpleJdbc"/>
+    </bean>
+
+    <bean id="wplataManager" class="faktury.core.managers.WplataManager">
+        <property name="getFakturaSqlQuery">
+            <value>
+                SELECT * FROM wplata WHERE id = ?
+            </value>
+        </property>
+        <property name="insertFakturaSqlQuery">
+            <value>
+                INSERT INTO wplata (datawplaty, kwota, faktura)
+                VALUES (?, ?, ?)
+            </value>
+        </property>
+        <property name="db" ref="simpleJdbc"/>
+    </bean>
+
     <!-- tu dodajemy kolejne managery w postaci:
         <bean id="nazwaManagera" class="pelna.sciezka.do.klasy.Managera">
             <property name="getCostamQuery">

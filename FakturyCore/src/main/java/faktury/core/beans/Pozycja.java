@@ -58,59 +58,59 @@ public class Pozycja {
         this.jednm = jednm;
     }
 
-    public Double getCena_netto() {
+    public double getCena_netto() {
         return cena_netto;
     }
 
-    public void setCena_netto(Double cena_netto) {
+    public void setCena_netto(double cena_netto) {
         this.cena_netto = cena_netto;
     }
 
-    public Long getVat() {
+    public long getVat() {
         return vat;
     }
 
-    public void setVat(Long vat) {
+    public void setVat(long vat) {
         this.vat = vat;
     }
 
-    public Double getCena_brutto() {
+    public double getCena_brutto() {
         return cena_brutto;
     }
 
-    public void setCena_brutto(Double cena_brutto) {
+    public void setCena_brutto(double cena_brutto) {
         this.cena_brutto = cena_brutto;
     }
 
-    public Double getIlosc() {
+    public double getIlosc() {
         return ilosc;
     }
 
-    public void setIlosc(Double ilosc) {
+    public void setIlosc(double ilosc) {
         this.ilosc = ilosc;
     }
 
-    public Double getWartosc_netto() {
+    public double getWartosc_netto() {
         return wartosc_netto;
     }
 
-    public void setWartosc_netto(Double wartosc_netto) {
+    public void setWartosc_netto(double wartosc_netto) {
         this.wartosc_netto = wartosc_netto;
     }
 
-    public Double getWartosc_brutto() {
+    public double getWartosc_brutto() {
         return wartosc_brutto;
     }
 
-    public void setWartosc_brutto(Double wartosc_brutto) {
+    public void setWartosc_brutto(double wartosc_brutto) {
         this.wartosc_brutto = wartosc_brutto;
     }
 
-    public Long getFaktura() {
+    public long getFaktura() {
         return faktura;
     }
 
-    public void setFaktura(Long faktura) {
+    public void setFaktura(long faktura) {
         this.faktura = faktura;
     }
 
@@ -118,8 +118,8 @@ public class Pozycja {
     private String nazwa;
     private String pkwiu;
     private String jednm;
-    private Double cena_netto;
-    private Long vat;
+    private double cena_netto;
+    private long vat;
     private double cena_brutto;
     private double ilosc;
     private double wartosc_netto;

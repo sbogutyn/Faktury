@@ -30,7 +30,7 @@
             CREATE TABLE stawka_vat (
             id SERIAL PRIMARY KEY,
             stawka_vat  VARCHAR(10) NOT NULL,
-            wartosc_vat INTEGER
+            wartosc_vat VARCHAR(10)
             );
 
             CREATE TABLE jednostka (
