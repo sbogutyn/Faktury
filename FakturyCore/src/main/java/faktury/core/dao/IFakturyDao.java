@@ -1,6 +1,6 @@
 package faktury.core.dao;
 
-import faktury.core.beans.Firma;
+import faktury.core.beans.*;
 
 /**
  * Created by IntelliJ IDEA.
@@ -11,4 +11,12 @@ import faktury.core.beans.Firma;
 public interface IFakturyDao {
     public Firma getFirma(long id);
     public void saveFirma(Firma firma);
+    public Stawka_vat getStawka_vat(long id);
+    public void saveStawka_vat(Stawka_vat stawka_vat);
+    public Faktura getFaktura(long id);
+    public void saveFaktura(Faktura faktura);
+    public Pozycja getPozycja(long id);
+    public void savePozycja(Pozycja pozycja);
+    public Wplata getWplata(long id);
+    public void saveWplata(Wplata wplata);
 }
