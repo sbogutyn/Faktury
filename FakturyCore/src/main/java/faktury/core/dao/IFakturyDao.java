@@ -11,8 +11,8 @@ import faktury.core.beans.*;
 public interface IFakturyDao {
     public Firma getFirma(long id);
     public void saveFirma(Firma firma);
-    public Stawka_vat getStawka_vat(long id);
-    public void saveStawka_vat(Stawka_vat stawka_vat);
+    public StawkaVat getStawkaVat(long id);
+    public void saveStawkaVat(StawkaVat stawka_vat);
     public Faktura getFaktura(long id);
     public void saveFaktura(Faktura faktura);
     public Pozycja getPozycja(long id);

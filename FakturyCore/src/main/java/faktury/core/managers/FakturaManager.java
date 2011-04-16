@@ -32,10 +32,10 @@ public class FakturaManager {
                 faktura.getNr(),
                 faktura.getData_wystawienie(),
                 faktura.getData_sprzedazy(),
-                faktura.getTermin_platnosci(),
                 faktura.getFirma(),
                 faktura.getKontrahent(),
                 faktura.getForma_platnosci(),
+                faktura.getTermin_platnosci(),
                 faktura.getRabat());
         return null;
     }

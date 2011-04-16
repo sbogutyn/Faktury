@@ -23,7 +23,7 @@
         <property name="db" ref="simpleJdbc"/>
     </bean>
 
-    <bean id="stawka_vatManager" class="faktury.core.managers.Stawka_vatManager">
+    <bean id="stawkaVatManager" class="faktury.core.managers.StawkaVatManager">
         <property name="getFakturaSqlQuery">
             <value>
                 SELECT * FROM stawka_vat WHERE id = ?

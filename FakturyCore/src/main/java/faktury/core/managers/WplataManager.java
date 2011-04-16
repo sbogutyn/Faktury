@@ -1,6 +1,5 @@
 package faktury.core.managers;
 
-import faktury.core.beans.Stawka_vat;
 import faktury.core.beans.Wplata;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.core.simple.SimpleJdbcTemplate;

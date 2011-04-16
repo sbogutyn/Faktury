@@ -10,7 +10,7 @@
 
     <bean id="dao" class="faktury.core.dao.FakturyDaoImpl">
         <property name="firmaManager" ref="firmaManager"/>
-        <property name="stawka_vatManager" ref="stawka_vatManager"/>
+        <property name="stawkaVatManager" ref="stawkaVatManager"/>
         <property name="fakturaManager" ref="fakturaManager"/>
         <property name="pozycjaManager" ref="pozycjaManager"/>
         <property name="wplataManager" ref="wplataManager"/>

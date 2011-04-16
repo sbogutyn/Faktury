@@ -13,7 +13,7 @@ public class FakturyDaoImpl implements IFakturyDao {
 
     //managery dla poszczególnych obiektów
     FirmaManger firmaManager;
-    Stawka_vatManager stawka_vatManager;
+    StawkaVatManager stawkaVatManager;
     FakturaManager fakturaManager;
     PozycjaManager pozycjaManager;
     WplataManager wplataManager;
@@ -26,11 +26,11 @@ public class FakturyDaoImpl implements IFakturyDao {
         firmaManager.saveFirma(firma);
     }
 
-    public Stawka_vat getStawka_vat(long id) {
-        return stawka_vatManager.getStawka_vat(id);
+    public StawkaVat getStawkaVat(long id) {
+        return stawkaVatManager.getStawkaVat(id);
     }
-    public void saveStawka_vat(Stawka_vat stawka_vat) {
-        stawka_vatManager.saveStawka_vat(stawka_vat);
+    public void saveStawkaVat(StawkaVat stawka_vat) {
+        stawkaVatManager.saveStawkaVat(stawka_vat);
     }
 
     public Faktura getFaktura(long id) {
@@ -58,16 +58,21 @@ public class FakturyDaoImpl implements IFakturyDao {
     public void setFirmaManager(FirmaManger firmaManager) {
         this.firmaManager = firmaManager;
     }
-    public void setStawka_vat(Stawka_vatManager stawka_vatManager) {
-        this.stawka_vatManager = stawka_vatManager;
+
+    public void setStawkaVatManager(StawkaVatManager stawkaVatManager) {
+        this.stawkaVatManager = stawkaVatManager;
     }
-    public void setFaktura(FakturaManager fakturaManager) {
+
+    public void setFakturaManager(FakturaManager fakturaManager) {
         this.fakturaManager = fakturaManager;
     }
-    public void setPozycja(PozycjaManager pozycjaManager) {
+
+    public void setPozycjaManager(PozycjaManager pozycjaManager) {
         this.pozycjaManager = pozycjaManager;
     }
-    public void setWplata(WplataManager wplataManager) {
+
+    public void setWplataManager(WplataManager wplataManager) {
         this.wplataManager = wplataManager;
     }
 }
+

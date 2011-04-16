@@ -48,14 +48,14 @@ public class Main {
     }
 
 
-    private void saveStawka_vatTest() {
-        Stawka_vat stawka_vat = new Stawka_vat();
-        stawka_vat.setStawka_vat("15%");
-        stawka_vat.setWartosc_vat("22%");
-        fakturyDao.saveStawka_vat(stawka_vat);
+    private void saveStawkaVatTest() {
+        StawkaVat stawkaVat = new StawkaVat();
+        stawkaVat.setStawkaVat("15%");
+        stawkaVat.setWartoscVat(15);
+        fakturyDao.saveStawkaVat(stawkaVat);
     }
-    private void getStawka_vatTest(long id) {
-        Stawka_vat stawka_vat = fakturyDao.getStawka_vat(id);
+    private void getStawkaVatTest(long id) {
+        StawkaVat stawka_vat = fakturyDao.getStawkaVat(id);
         System.out.println("Stawka vat: " + stawka_vat);
     }
 
@@ -67,12 +67,12 @@ public class Main {
         faktura.setData_wystawienie(date1);
         java.sql.Date date2 = java.sql.Date.valueOf( "2011-01-01" );
         faktura.setData_sprzedazy(date2);
-        faktura.setFirma(35);
-        faktura.setKontrahent(21);
-        faktura.setForma_platnosci(2);
+        faktura.setFirma(2);
+        faktura.setKontrahent(3);
+        faktura.setForma_platnosci(1);
         java.sql.Date date3 = java.sql.Date.valueOf( "2011-01-01" );
         faktura.setTermin_platnosci(date3);
-        faktura.setRabat(4);
+        faktura.setRabat(1);
         fakturyDao.saveFaktura(faktura);
     }
     private void getFakturaTest(long id) {
@@ -120,8 +120,8 @@ public class Main {
     public void run() {
         saveFirmaTest();
         getFirmaTest(1);
-        saveStawka_vatTest();
-        getStawka_vatTest(1);
+        saveStawkaVatTest();
+        getStawkaVatTest(1);
         saveFakturaTest();
         getFakturaTest(1);
         savePozycjaTest();
