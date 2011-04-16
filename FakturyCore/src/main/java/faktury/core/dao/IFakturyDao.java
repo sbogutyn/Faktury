@@ -19,4 +19,12 @@ public interface IFakturyDao {
     public void savePozycja(Pozycja pozycja);
     public Wplata getWplata(long id);
     public void saveWplata(Wplata wplata);
+    public Jednostka getJednostka(long id);
+    public void saveJednostka(Jednostka jednostka);
+    public Rabat getRabat(long id);
+    public void saveRabat(Rabat rabat);
+    public Forma_platnosci getForma_platnosci(long id);
+    public void saveForma_platnosci(Forma_platnosci forma_platnosci);
+    public Towar getTowar(long id);
+    public void saveTowar(Towar towar);
 }

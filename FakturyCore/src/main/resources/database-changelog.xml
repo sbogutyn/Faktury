@@ -40,14 +40,14 @@
 
             CREATE TABLE forma_platnosci (
             id SERIAL PRIMARY KEY,
-            opis  VARCHAR(10) NOT NULL,
+            opis  VARCHAR(20) NOT NULL,
             ilosc_dni INTEGER
             );
 
             CREATE TABLE rabat (
             id SERIAL PRIMARY KEY,
-            wartosczakupow  INTEGER NOT NULL,
-            wusokoscrabatu INTEGER NOT NULL
+            wartosc_zakupow  INTEGER NOT NULL,
+            wysokosc_rabatu INTEGER NOT NULL
             );
 
             CREATE TABLE towar (

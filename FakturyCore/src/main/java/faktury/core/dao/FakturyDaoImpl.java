@@ -17,6 +17,11 @@ public class FakturyDaoImpl implements IFakturyDao {
     FakturaManager fakturaManager;
     PozycjaManager pozycjaManager;
     WplataManager wplataManager;
+    JednostkaManager jednostkaManager;
+    RabatManager rabatManager;
+    Forma_platnosciManager forma_platnosciManager;
+    TowarManager towarManager;
+
 
     //każdy obiekt powinien mieć metodę save i get
     public Firma getFirma(long id) {
@@ -53,6 +58,39 @@ public class FakturyDaoImpl implements IFakturyDao {
         wplataManager.saveWplata(wplata);
     }
 
+    public Jednostka getJednostka(long id) {
+        return jednostkaManager.getJednostka(id);
+    }
+
+    public void saveJednostka(Jednostka jednostka) {
+        jednostkaManager.saveJednostka(jednostka);
+    }
+
+    public Rabat getRabat(long id) {
+        return rabatManager.getRabat(id);
+    }
+
+    public void saveRabat(Rabat rabat) {
+        rabatManager.saveRabat(rabat);
+    }
+
+    public Forma_platnosci getForma_platnosci(long id) {
+        return forma_platnosciManager.getForma_platnosci(id);
+    }
+
+    public void saveForma_platnosci(Forma_platnosci forma_platnosci) {
+        forma_platnosciManager.saveForma_platnosci(forma_platnosci);
+    }
+
+    public Towar getTowar(long id) {
+        return towarManager.getTowar(id);
+    }
+
+    public void saveTowar(Towar towar) {
+        towarManager.saveTowar(towar);
+    }
+
+
 
     //settery dla managerów
     public void setFirmaManager(FirmaManger firmaManager) {
@@ -73,6 +111,21 @@ public class FakturyDaoImpl implements IFakturyDao {
 
     public void setWplataManager(WplataManager wplataManager) {
         this.wplataManager = wplataManager;
+    }
+    public void setJednostkaManager(JednostkaManager jednostkaManager) {
+        this.jednostkaManager = jednostkaManager;
+    }
+
+    public void setRabatManager(RabatManager rabatManager) {
+        this.rabatManager = rabatManager;
+    }
+
+    public void setForma_platnosciManager(Forma_platnosciManager forma_platnosciManager) {
+        this.forma_platnosciManager = forma_platnosciManager;
+    }
+
+    public void setTowarManager(TowarManager towarManager) {
+        this.towarManager = towarManager;
     }
 }
 
