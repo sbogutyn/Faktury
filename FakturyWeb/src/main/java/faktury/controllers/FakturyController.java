@@ -13,7 +13,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class FakturyController {
     @RequestMapping("/faktury")
-    public ModelAndView helloWorld() {
+    public ModelAndView faktury() {
 
         String message = "Lista faktur: ";
         return new ModelAndView("faktury", "message", message);
