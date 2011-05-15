@@ -11,5 +11,19 @@
 
     <artifactId>FakturyGui</artifactId>
 
+    <dependencies>
+
+        <dependency>
+            <groupId>jgoodies</groupId>
+            <artifactId>forms</artifactId>
+            <version>1.0.5</version>
+        </dependency>
+        <dependency>
+            <groupId>jasperreports</groupId>
+            <artifactId>jasperreports</artifactId>
+            <version>3.5.3</version>
+        </dependency>
+
+    </dependencies>
 
 </project>

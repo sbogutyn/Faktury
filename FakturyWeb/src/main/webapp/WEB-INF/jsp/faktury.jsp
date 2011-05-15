@@ -1,0 +1,9 @@
+<html>
+<head>
+    <title>Faktury</title>
+</head>
+<body>
+    <h1>Faktury</h1>
+    <p>${message}</p>
+</body>
+</html>
